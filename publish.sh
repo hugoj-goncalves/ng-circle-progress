@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function build {
-  npm run build
+  npm run build -- ng-circle-progress
 }
 
 function updateVersion {
