@@ -5,13 +5,13 @@ function build {
 }
 
 function updateVersion {
-    pushd projects
-    echo "New version change: $newVersion"
-    oldVersionValue=$(cat package.json | grep version | grep -oP "\d+[^\"]+")
-    npm version "$newVersion"
-    newVersionValue=$(cat package.json | grep version | grep -oP "\d+[^\"]+")
-    echo "New version value: $newVersionValue - from $oldVersionValue"
-    popd
+  pushd projects/ng-circle-progress
+  echo "New version change: $newVersion"
+  oldVersionValue=$(cat package.json | grep version | grep -oP "\d+[^\"]+")
+  npm version "$newVersion"
+  newVersionValue=$(cat package.json | grep version | grep -oP "\d+[^\"]+")
+  echo "New version value: $newVersionValue - from $oldVersionValue"
+  popd
 }
 
 newVersion="$1"
