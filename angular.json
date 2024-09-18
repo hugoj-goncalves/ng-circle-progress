@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-circle-progress-library:build"
+            "buildTarget": "ng-circle-progress-library:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-circle-progress-library:build:production"
+              "buildTarget": "ng-circle-progress-library:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-circle-progress-library:build"
+            "buildTarget": "ng-circle-progress-library:build"
           }
         },
         "test": {
