@@ -1,6 +1,6 @@
 {
-  "name": "ng-circle-progress",
-  "version": "1.7.1",
+  "name": "@eklesia/ng-circle-progress",
+  "version": "1.7.1-eklesia18.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/bootsoon/ng-circle-progress"
